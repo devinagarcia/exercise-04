@@ -1,7 +1,7 @@
 ---
 title: "Geography 176A Lab 1"
 subtitle: "Meet R, RMarkdown, & Github"
-author: Mike Johnson
+author: Devina Garcia
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
   html_document:
@@ -177,7 +177,7 @@ cities %>%
 ## In line code:
 
 ```{r, echo = FALSE}
-threshold = 1000000
+threshold = 100000
 big_cities = 
   filter(cities, population > threshold) %>%
   filter(!state_name %in% c("Alaska", "Hawaii", "Puerto Rico"))
